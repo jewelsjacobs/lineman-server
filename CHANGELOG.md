@@ -1,3 +1,12 @@
+<a name="0.1.2"></a>
+### 0.1.2 (2014-02-24)
+
+
+#### Features
+
+* **app:** watch ([1be1ada7](http://github.com/jewelsjacobs/lineman-server/commit/1be1ada73771981f60ecca91932370b8bdd5017f))
+
+
 <a name="0.1.1"></a>
 ### 0.1.1 (2014-02-24)
 

@@ -5,6 +5,7 @@ module.exports = (grunt) ->
   require("load-grunt-tasks") grunt
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
+    # format to commit: git commit -m"fix(app): bad server-file paths"
     changelog:
       options:
         dest: "CHANGELOG.md"

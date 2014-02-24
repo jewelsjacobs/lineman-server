@@ -3,7 +3,7 @@ module.exports = (lineman) ->
   app = lineman.config.application
 
   files:
-    server:
+    "create-server":
       app: "app/server"
       generated: "generated/server"
       dist: "dist/server"
@@ -24,3 +24,8 @@ module.exports = (lineman) ->
         files:
           "<%= files.server.app %>": "<%= files.server.generated %>"
           "<%= files.server.app %>": "<%= files.server.dist %>"
+
+    watch:
+      "create-server":
+        files: "app/server/**/*.coffee",
+        tasks: ["create-server"]

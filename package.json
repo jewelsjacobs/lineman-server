@@ -1,0 +1,46 @@
+{
+  "name": "lineman-server",
+  "title": "An Express production server for a lineman app.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jewelsjacobs/lineman-server",
+  "author": {
+    "name": "Julia Jacobs",
+    "company": "Rackspace"
+  },
+  "scripts": {
+    "postinstall": "node script/postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jewelsjacobs/lineman-server.git"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-coffee": "0.7.0",
+    "grunt-contrib-copy": "0.4.1",
+    "coffee-script": "~1.6.3",
+    "ncp": "^0.5.0"
+  },
+  "peerDependencies": {
+    "lineman": ">= 0.19.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-conventional-changelog": "~1.1.0",
+    "load-grunt-tasks": "~0.3.0",
+    "marked": "~0.3.1",
+    "semver": "~2.2.1",
+    "underscore.string": "~2.3.3",
+    "grunt-release": "~0.7.0",
+    "grunt-shell": "~0.6.4"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://mit-license.org"
+    }
+  ]
+}

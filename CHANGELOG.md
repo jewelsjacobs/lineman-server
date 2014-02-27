@@ -1,3 +1,12 @@
+<a name="0.1.3"></a>
+### 0.1.3 (2014-02-24)
+
+
+#### Bug Fixes
+
+* **app:** copy server file path fix ([2b17dece](http://github.com/jewelsjacobs/lineman-server/commit/2b17dece5b583cc2dfc66f5a761f62e5d8dd2542))
+
+
 <a name="0.1.2"></a>
 ### 0.1.2 (2014-02-24)
 

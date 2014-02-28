@@ -7,7 +7,7 @@ index = require("./controllers/index")
 module.exports = (app) ->
 
   # Server API Routes
-  app.get "/api/content", api.content
+  app.get "/api/content", api.awesomeThings
 
   # All other routes to use Angular routing in app/scripts/app.js
 #  app.get "/partials/*", index.partials

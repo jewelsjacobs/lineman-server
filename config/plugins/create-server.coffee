@@ -5,21 +5,12 @@ module.exports = (lineman) ->
   files:
     "createserver":
       app: "app/server"
-      generated: "generated/server"
-      dist: "dist/server"
+      generated: "generated/js/app.coffee.js"
 
   config:
-
-    clean:
-      js:
-        src: [
-          "<%= files.createserver.generated %>"
-          "<%= files.createserver.dist %>"
-        ]
 
     coffee:
       compile:
         files:
-          "<%= files.createserver.app %>": "<%= files.createserver.generated %>"
-          "<%= files.createserver.app %>": "<%= files.createserver.dist %>"
+          "<%= files.createserver.generated %>": "<%= files.createserver.app %>/**/*.coffee"
 

@@ -15,13 +15,13 @@ module.exports = (lineman) ->
     clean:
       js:
         src: [
-          "<%= files.server.generated %>"
-          "<%= files.dist.generated %>"
+          "<%= files.create-server.generated %>"
+          "<%= files.create-server.generated %>"
         ]
 
     coffee:
       compile:
         files:
-          "<%= files.server.app %>": "<%= files.server.generated %>"
-          "<%= files.server.app %>": "<%= files.server.dist %>"
+          "<%= files.create-server.app %>": "<%= files.create-server.generated %>"
+          "<%= files.create-server.app %>": "<%= files.create-server.dist %>"
 

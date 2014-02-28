@@ -2,6 +2,4 @@
 
 # # Test environment configuration
 
-module.exports = {
-  env: 'test'
-};
+module.exports = env: "test"

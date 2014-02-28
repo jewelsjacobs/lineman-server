@@ -27,7 +27,7 @@ module.exports = (grunt) ->
         options:
           stdout: true
 
-        command: "reggie -u http://apps-playground.autohost.rackspace.net:8080 publish"
+        command: "npm publish"
 
   grunt.registerTask "bump", "bump manifest version", (type) ->
     setup = (file, type) ->

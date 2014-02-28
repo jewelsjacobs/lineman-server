@@ -1,8 +1,10 @@
-ncp = require('ncp').ncp;
+ncp = require('ncp').ncp
+path = require('path')
 
 module.exports =
   initialize: ->
-    ncp "./server-files", "../../app", (err) ->
+    serverFiles = path.join(__dirname, 'server-files')
+    ncp serverFiles, "../../app", (err) ->
       return console.error(err)  if err
       console.log "done!"
       return

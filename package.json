@@ -1,8 +1,8 @@
 {
-  "name": "lineman-server",
+  "name": "lineman-create-server",
   "title": "An Express production server for a lineman app.",
   "version": "0.1.14",
-  "homepage": "https://github.com/jewelsjacobs/lineman-server",
+  "homepage": "https://github.com/rackerlabs/lineman-create-server",
   "author": {
     "name": "Julia Jacobs",
     "company": "Rackspace"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jewelsjacobs/lineman-server.git"
+    "url": "git://github.com/rackerlabs/lineman-server.git"
   },
   "main": "main.js",
   "dependencies": {

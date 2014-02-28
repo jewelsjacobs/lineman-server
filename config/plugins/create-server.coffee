@@ -11,10 +11,9 @@ module.exports = (lineman) ->
   config:
     clean:
       js:
-        src: app.concat_sourcemap.js.src.concat("<%= files.create-server.generated %>","<%= files.create-server.dist %>")
+        src: app.clean.js.src.concat("<%= files.create-server.generated %>","<%= files.create-server.dist %>")
 
-  coffee:
-    compile:
-      files:
-        "<%= files.create-server.app %>": "<%= files.create-server.generated %>"
+    coffee:
+      compile:
+        files: app.coffee.compile.files.concat("<%= files.create-server.generated %>","<%= files.create-server.dist %>")
 

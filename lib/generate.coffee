@@ -1,3 +1,4 @@
+require('coffee-script/register')
 ncp = require('ncp').ncp
 path = require('path')
 mkdirp = require('mkdirp')
@@ -11,8 +12,3 @@ module.exports =
         console.log "done!"
         return
       return
-
-
-
-
-

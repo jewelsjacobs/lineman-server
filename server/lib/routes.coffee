@@ -5,11 +5,6 @@ index = require("./controllers/index")
 # # Application routes
 
 module.exports = (app) ->
-  app.configure "production", ->
-
-    # Server API Routes
-    app.use "/generator-sample", api
-    return
 
   # Server API Routes
   app.get "/api/content", api.content

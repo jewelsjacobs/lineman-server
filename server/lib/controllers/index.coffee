@@ -18,9 +18,6 @@ exports.partials = (req, res) ->
 # Send our single page app
 
 exports.index = (req, res) ->
-  baseurl = (if (process.env.NODE_ENV is "production") then "/generator-sample/" else "/")
-  res.render "index",
-    baseurl: baseurl
-    title: "Generator Sample"
+  res.render "index"
 
   return

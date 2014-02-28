@@ -9,19 +9,12 @@ module.exports = (lineman) ->
       dist: "dist/server"
 
   config:
-    prependTasks:
-      common: ["create-server"].concat(app.prependTasks.common)
-
     clean:
       js:
-        src: [
-          "<%= files.create-server.generated %>"
-          "<%= files.create-server.dist %>"
-        ]
+        src: app.concat_sourcemap.js.src.concat("<%= files.create-server.generated %>","<%= files.create-server.dist %>")
 
-    coffee:
-      compile:
-        files:
-          "<%= files.create-server.app %>": "<%= files.create-server.generated %>"
-          "<%= files.create-server.app %>": "<%= files.create-server.dist %>"
+  coffee:
+    compile:
+      files:
+        "<%= files.create-server.app %>": "<%= files.create-server.generated %>"
 

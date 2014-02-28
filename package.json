@@ -1,7 +1,7 @@
 {
   "name": "lineman-create-server",
   "title": "An Express production server for a lineman app.",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "homepage": "https://github.com/rackerlabs/lineman-create-server",
   "author": {
     "name": "Julia Jacobs",

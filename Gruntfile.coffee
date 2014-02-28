@@ -5,7 +5,6 @@ module.exports = (grunt) ->
   require("load-grunt-tasks") grunt
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
-    # format to commit: git commit -m"fix(app): bad server-file paths"
     changelog:
       options:
         dest: "CHANGELOG.md"
@@ -21,13 +20,6 @@ module.exports = (grunt) ->
     stage:
       options:
         files: ["CHANGELOG.md"]
-
-    shell:
-      publish:
-        options:
-          stdout: true
-
-        command: "npm publish"
 
   grunt.registerTask "bump", "bump manifest version", (type) ->
     setup = (file, type) ->
@@ -55,6 +47,5 @@ module.exports = (grunt) ->
     "changelog"
     "stage"
     "release"
-    "shell"
   ]
   return

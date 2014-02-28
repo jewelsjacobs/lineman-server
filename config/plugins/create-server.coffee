@@ -3,7 +3,7 @@ module.exports = (lineman) ->
   app = lineman.config.application
 
   files:
-    "create-server":
+    "createserver":
       app: "app/server"
       generated: "generated/server"
       dist: "dist/server"
@@ -13,13 +13,13 @@ module.exports = (lineman) ->
     clean:
       js:
         src: [
-          "<%= files.create-server.generated %>"
-          "<%= files.create-server.dist %>"
+          "<%= files.createserver.generated %>"
+          "<%= files.createserver.dist %>"
         ]
 
     coffee:
       compile:
         files:
-          "<%= files.create-server.app %>": "<%= files.create-server.generated %>"
-          "<%= files.create-server.app %>": "<%= files.create-server.dist %>"
+          "<%= files.createserver.app %>": "<%= files.createserver.generated %>"
+          "<%= files.createserver.app %>": "<%= files.createserver.dist %>"
 

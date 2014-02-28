@@ -16,7 +16,7 @@ module.exports = (lineman) ->
       js:
         src: [
           "<%= files.create-server.generated %>"
-          "<%= files.create-server.generated %>"
+          "<%= files.create-server.dist %>"
         ]
 
     coffee:

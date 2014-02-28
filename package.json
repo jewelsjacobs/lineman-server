@@ -1,7 +1,7 @@
 {
   "name": "lineman-server",
   "title": "An Express production server for a lineman app.",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "homepage": "https://github.com/jewelsjacobs/lineman-server",
   "author": {
     "name": "Julia Jacobs",
